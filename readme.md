@@ -26,6 +26,7 @@
 
 ---
 
+
 #UI
 
 ![Output](images/1.png)
@@ -43,6 +44,10 @@
 | 🤖 **LangChain Agent** | Intelligently decides whether to chat, search, or generate an image |
 
 ---
+
+
+
+
 
 ## 🧠 How It Works
 
