@@ -1,58 +1,150 @@
-# 🤖 AI-Powered Discord Assistant
+🚀 AI-Powered Discord Assistant
 
-[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
-[![Discord.py](https://img.shields.io/badge/Discord-Bot-5865F2.svg)](https://discordpy.readthedocs.io/)
-[![LangChain](https://img.shields.io/badge/Framework-LangChain-green.svg)](https://python.langchain.com/)
+An intelligent AI-powered Discord bot built using Python, Discord.py, LangChain, Google Gemini, OpenAI Image Generation, and Tavily Search API.
 
-An advanced, multi-modal autonomous Discord bot. This assistant engages in conversational reasoning, searches the live internet for up-to-date facts, and dynamically generates images directly in your Discord server.
+This assistant can:
 
-## ✨ Core Features
-* 🧠 **Advanced Reasoning:** Powered by Google's `Gemini 2.5 Flash` for high-speed, intelligent text generation and conversation.
-* 🌐 **Live Web Search:** Integrated with the `Tavily API` to bypass standard LLM training data cut-offs and fetch real-time internet data to answer questions accurately.
-* 🎨 **Image Generation:** Utilizes OpenAI's `DALL-E 3` to seamlessly generate and send image files natively within the Discord channel.
-* 🔀 **Smart Agentic Routing:** Uses `LangGraph` (`create_react_agent`) to autonomously decide *when* to search the web, *when* to generate an image, and *when* to simply converse.
-
-## 🏗️ Architecture Stack
-* **LLM Engine:** Google Gemini 2.5 Flash
-* **Agent Framework:** LangChain / LangGraph
-* **Search Engine:** Tavily API
-* **Vision Model:** OpenAI DALL-E 3
-* **Discord Wrapper:** `discord.py`
-
-## 🚀 Quick Start (Local Setup)
-
-### 1. Clone the repository
-
-    git clone [https://github.com/akshitgajera1013/AI-Powered-Discord-Assistant.git](https://github.com/akshitgajera1013/AI-Powered-Discord-Assistant.git)
+    💬 Chat naturally with users
+    🌐 Search the internet for latest information
+    🎨 Generate AI images from prompts
+    ⚡ Respond in real-time inside Discord servers
+    📌 Features
     
+    ✅ AI-powered conversational assistant
+    ✅ Internet search using Tavily API
+    ✅ AI image generation support
+    ✅ Real-time Discord integration
+    ✅ Typing indicator while generating responses
+    ✅ Clean and modular project structure
+    ✅ Async support for smooth performance
+
+🛠️ Tech Stack
+    Python
+    Discord.py
+    LangChain
+    Google Gemini API
+    OpenAI API
+    Tavily Search API
+    dotenv
+
+📂 Project Structure
+
+    AI-Powered-Discord-Assistant/
+    ├── bot.py
+    ├── agent.py
+    ├── .env
+    ├── requirements.txt
+    └── README.md
+
+
+⚙️ Installation
+1️⃣ Clone Repository
+
+    git clone https://github.com/akshitgajera1013/AI-Powered-Discord-Assistant.git
     cd AI-Powered-Discord-Assistant
 
-2. Install Dependencies
-   
-Ensure you have Python 3.9+ installed, then run:
+2️⃣ Create Virtual Environment
 
-      pip install -r requirements.txt
+Windows
 
-3. Environment Variables
-   
-Create a .env file in the root directory and add your API keys. Never commit this file to GitHub
+    python -m venv venv
+    venv\Scripts\activate
 
-    DISCORD_API_KEY="your_discord_bot_token"
-    GEMINI_API_KEY="your_google_gemini_key"
-    OPENAI_API_KEY="your_openai_api_key"
-    TAVILY_API_KEY="your_tavily_api_key"
+Mac/Linux
 
-4. Run the Bot
-   
-Start the background worker to bring your bot online:
+    python3 -m venv venv
+    source venv/bin/activate
 
-    python bot.py
+3️⃣ Install Dependencies
 
-🎮 Usage
-Once the bot is invited to your server and running, simply send a message in any channel the bot has access to.
+    pip install -r requirements.txt
 
-Ask a question: "What is the weather like in Tokyo today?" (Triggers Tavily Search)
+🔑 Environment Variables
 
-Generate art: "Generate an image of a futuristic cyberpunk city at night." (Triggers DALL-E 3)
+Create a .env file in the root directory.
 
-Chat: "Write a short poem about coding." (Triggers Gemini)
+    DISCORD_API_KEY=your_discord_bot_token
+    TAVILY_API_KEY=your_tavily_api_key
+    GOOGLE_API_KEY=your_google_gemini_api_key
+    OPENAI_API_KEY=your_openai_api_key
+
+
+🤖 Discord Bot Setup
+Step 1 — Create Discord Application
+
+Go to:
+
+    👉 https://discord.com/developers/applications
+
+Create a new application
+Open the Bot section
+Click Add Bot
+
+Step 2 — Enable Privileged Gateway Intents
+
+Enable:
+
+✅ Message Content Intent
+
+Step 3 — Invite Bot to Server
+
+Go to:
+
+OAuth2 → URL Generator
+
+Select:
+
+bot
+
+Bot Permissions:
+
+Administrator
+
+Then copy generated URL and invite bot to your server.
+
+
+▶️ Run The Bot
+python bot.py
+
+If everything is configured correctly:
+
+Bot is online 🚀
+🧠 How It Works
+Internet Search Tool
+
+Uses Tavily API to fetch latest real-time information.
+
+@tool
+def surfInternet(query:str):
+AI Image Generation Tool
+
+Generates images using OpenAI image generation tools and sends directly to Discord.
+
+@tool
+def generateAndSendImage(prompt:str,runTime:ToolRuntime):
+Agent System
+
+The bot uses LangChain agents to intelligently decide:
+
+When to search the web
+When to generate images
+How to answer users naturally
+
+📸 Example Commands
+Chat with AI
+What is Machine Learning?
+Search Internet
+Latest AI news
+Generate Image
+Generate image of futuristic cyberpunk city
+
+
+👨‍💻 Author
+Akshit Gajera
+Data Science & Machine Learning Enthusiast
+Python Developer
+AI & LLM Projects Builder
+
+GitHub:
+
+akshitgajera1013 GitHub
