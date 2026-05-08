@@ -2,7 +2,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
 [![Discord.py](https://img.shields.io/badge/Discord-Bot-5865F2.svg)](https://discordpy.readthedocs.io/)
-[![LangChain](https://img.shields.io/badge/Framework-LangGraph-green.svg)](https://python.langchain.com/)
+[![LangChain](https://img.shields.io/badge/Framework-LangChain-green.svg)](https://python.langchain.com/)
 
 An advanced, multi-modal autonomous Discord bot. This assistant engages in conversational reasoning, searches the live internet for up-to-date facts, and dynamically generates images directly in your Discord server.
 
