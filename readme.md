@@ -215,13 +215,6 @@ Contributions are welcome! Here's how to get started:
 
 Please follow [Conventional Commits](https://www.conventionalcommits.org/) for commit messages.
 
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
-
----
 
 ## 👨‍💻 Author
 
